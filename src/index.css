@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Sofia+Sans+Extra+Condensed:ital,wght@0,1..1000;1,1..1000&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+/* Apply scaling effect on interactive elements */
+.cursor-hover {
+    cursor: none !important;
+    transition: transform 0.3s;
+    display: none;
+  }
+  
+  .cursor-hover-active {
+    transform: scale(1.5);
+    background-color: rgba(207, 216, 29, 0.8); /* Indigo */
+    
+  }
+  .cursor-hover-active:hover {
+    transform: scale(1.5);
+    background-color: rgba(207, 216, 29, 0.8); /* Indigo */
+  }
+
+  /* custom scrollbar with the theme color */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #116f76;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #eeeeef;
+}
+
+body{
+   font-family: 'Quicksand', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+}
+  
