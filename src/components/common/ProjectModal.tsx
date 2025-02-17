@@ -28,7 +28,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({
       onClose={onClose}
       className="flex justify-center items-center min-h-screen py-8"
     >
-      <div className="p-6 bg-white dark:bg-gray-900 h-full overflow-auto rounded-lg w-4/5 mx-auto mt-20 relative">
+      <div className="p-6 bg-white dark:bg-gray-900 h-full overflow-auto rounded-lg w-full md:w-4/5 mx-auto md:mt-20 relative">
         {/* Close Button */}
         <button
           onClick={onClose}
