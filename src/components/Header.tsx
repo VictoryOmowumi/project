@@ -54,7 +54,7 @@ const Header: React.FC = () => {
             
             <button
               onClick={toggleTheme}
-              className="p-2 rounded-full hover:bg-primary-green dark:hover:bg-gray-800 transition-colors"
+              className="p-2 rounded-full hover:bg-primary-green hover:text-gray-800 dark:hover:bg-gray-800 transition-colors"
             >
               {isDark ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
             </button>
