@@ -14,6 +14,8 @@ interface ProjectModalProps {
     videoUrl?: string;
     keyFeatures: string[];
     moreDetails?: string;
+    demoUrl?: string;
+    repoUrl?: string;
   };
 }
 
@@ -115,6 +117,37 @@ const ProjectModal: React.FC<ProjectModalProps> = ({
           <h4 className="font-semibold text-lg mb-2">Impact</h4>
           <p className="text-gray-700 dark:text-gray-300">{project.impact}</p>
         </div>
+
+          
+          {/* Demo URL */}
+        {project.demoUrl && (
+          <div className="mb-6">
+            <h4 className="font-semibold text-lg mb-2">Demo URL</h4>
+            <a
+              href={project.demoUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-indigo-600 dark:text-indigo-300 hover:underline"
+            >
+              {project.demoUrl}
+            </a>
+          </div>
+        )}
+
+        {/* Repository URL */}
+        {project.repoUrl && (
+          <div className="mb-6">
+            <h4 className="font-semibold text-lg mb-2">Repository URL</h4>
+            <a
+              href={project.repoUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-indigo-600 dark:text-indigo-300 hover:underline"
+            >
+              {project.repoUrl}
+            </a>
+          </div>
+        )}
 
         {/* Close Button */}
         <div className="text-right">

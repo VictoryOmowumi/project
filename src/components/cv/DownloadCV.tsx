@@ -11,7 +11,7 @@ const DownloadCV: React.FC = () => {
       transition={{ duration: 0.3 }}
     >
       <a
-        href="/VICTORY-BALOGUN-RESUME-2.pdf"
+        href="/Victory-Balogun-Resume.pdf"
         download
         className="flex items-center gap-2 bg-indigo-600 text-white px-6 py-3 rounded-full hover:bg-indigo-700 transition-colors shadow-lg"
       >

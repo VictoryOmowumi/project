@@ -14,7 +14,7 @@ const Projects: React.FC = () => {
 
   useEffect(() => {
     // Animate project cards on scroll
-    cardsRef.current.forEach((card, index) => {
+    cardsRef.current.forEach((card) => {
       gsap.fromTo(
         card,
         { opacity: 0, y: 50 },
